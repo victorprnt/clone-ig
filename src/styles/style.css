@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+ 
+  background-color: rgb(243, 243, 243);
+ 
+  width: 100%;
+  min-height: 100vh;
+}
+
+body .instagram-wrapper {
+  display: flex;
+ 
+  align-items: center;
+  justify-content: start;
+ 
+  width: 60%;
+  height: 100vh;
+}
+
+.instagram-smartphone {
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+ 
+  width: 50%;
+}
+
+.instagram-smartphone img {
+  height: 50rem;
+}
+
+.instagram-login {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  justify-content: space-around;
+  
+  width: 50%;
+  min-height: 34rem;
+}
+
+body .instagram-login .ig-login {
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+body .instagram-login .ig-logout {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: #ffffff;
+  
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.box:nth-child(1) {
+  min-height: 19rem;
+}
+
+.instagram-logo {
+  height: 3rem;
+}
+
+.avatar {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.avatar img {
+  border-radius: 50%;
+  height: 6rem;
+}
+
+.not-account { 
+  color: rgb(160, 160, 160);
+}
+
+.not-account a {
+  color: #0095f6;
+}
+
+.apps {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  justify-items: center;
+
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.button-apps {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 1rem;
+}
+
+.app-download img {
+  height: 3rem;
+  width: 10rem;
+
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .instagram-wrapper {
+    width: 90%;
+  }
+
+  .instagram-smartphone {
+    display: none ;
+  }
+
+  .instagram-login {
+    width: 100%;
+  }
+
+  .box {
+    border: 1px solid transparent ;
+  }
+}
